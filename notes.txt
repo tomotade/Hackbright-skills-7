@@ -1,27 +1,33 @@
 Timing Information:
+
 -------------------
 
 Extra Large Array
 -----------------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 4.835133 ms
+Time to run code with unshift(): 946.222888 ms
 
 Large Array
 -----------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 3.353797 ms
+Time to run code with unshift(): 964.841377 ms
 
 Medium Array
 ------------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 4.475958 ms
+Time to run code with unshift(): 987.26459 ms
 
 Small Array
 -----------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 3.389566 ms
+Time to run code with unshift(): 956.236538 ms
 
 Tiny Array
 ----------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 4.063031 ms
+Time to run code with unshift(): 966.604241 ms
+
+
+4. Read over the results, and write a paragraph that explains the pattern you see. How does each function “scale”? Which of the two functions scales better? How can you tell?
+
+When applying the push() and unshift() methods on arrays of various sizes, the results show a consistent pattern. In each example, the time used to run code using push() is significantly less than that with unshift(). This shows that push() scales more efficiently than unshift(). As the array size goes from Tiny to Extra Large, the execution time of both push() and unshift() increases, however the unshift() method constantly takes substantially longer than push().
